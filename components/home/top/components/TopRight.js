@@ -7,17 +7,14 @@ import Image from 'next/image'
 const TopRight = () => {
   return (
     <TopRightWrap>
-       <Image src="https://img.freepik.com/free-vector/data-network-businessman_24908-57841.jpg?w=740&t=st=1681563042~exp=1681563642~hmac=9c5bec9622b56718d14afa0a51b7f63dc384519d2da6279b31dcd1bf9f8edb31" width="400" height="400"/>
-    
-
+       <Image src="https://img.freepik.com/free-vector/online-doctor-concept_23-2148529537.jpg?w=826&t=st=1714526434~exp=1714527034~hmac=6826fb9935db27d913c033a08233930ecea4e131d804714f957dac11b2010b04" width="740" height="700"/>
     </TopRightWrap>
   )
 }
 
 const TopRightWrap=styled.div`
-padding-top: 6rem;
-    width: 48%;
-    display: flex;
+    width: 38%;
+    
 `
 
 export default TopRight

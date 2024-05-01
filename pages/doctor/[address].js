@@ -72,10 +72,6 @@ import lighthouse from '@lighthouse-web3/sdk'
      {
           console.log("bill amount = "+amt);
          const billamt = parseInt(amt);
-          console.log(signer.getAddress());
-          const isdoc = await patient.isDoctor(signer.getAddress());
-          console.log("is doctor current account ="+isdoc);
-     
           console.log("current file hash ------> "+hash);
           const addData = await patient.addBill(
             hash,
@@ -249,9 +245,7 @@ const FundTextContent = styled.p`
   font-size: normal;
 `;
 
-const Update=styled.div`
-width: 100%;
-`
+
 const DetailWrapper = styled.div`
   
   display: flex;
@@ -270,16 +264,6 @@ const RightContainer = styled.div`
   width: 50%;
   padding-top: 5rem;
 `;
-const BottomContainer=styled.div`
-  width: 50%;
-  padding-top: 10rem;
-  width:48%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-`
 
 const Title = styled.h1`
   padding-bottom: 3rem;
@@ -296,60 +280,7 @@ const DonateSection = styled.div`
   align-items: center;
   margin-top: 10px;
 `;
-const Textarea = styled.textarea`
-  padding: 8px 15px;
-  background-color: ${(props) => props.theme.detail};
-  color: ${(props) => props.theme.color};
-  //border: none;
-  border-radius: 8px;
-  //outline: none;
-  ::placeholder{
-    color:${(props) => props.theme.colorDiv} ;
-  }
-  font-size: large;
-`;
-const Donate = styled.button`
-  display: flex;
-  justify-content: center;
-  width: 45%;
-  padding: 15px;
-  color: white;
-  background-color: ${(props) => props.theme.btnDetail};
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: large;
-`;
 
-const TNavLinks=styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: ${(props) => props.theme.colorDiv};     
-    text-decoration: none;
-    &:hover{
-    background-color: ${(props) => props.theme.colorSec} ;
-    color:${(props) => props.theme.color} ;
-    transform: translateY(-2px);
-    transition: transform 0.5s;
-  }
-    height: max-content;
-    width: max-content;
-    font-family: 'Comfortaa';
-    margin:7px;
-    border-radius: 6px;
-    padding: 2px 5px 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-     font-weight: bold ;
-     font-size: medium;
-    
-
-`
-
-const Text=styled.p`
-  margin-top: 0;
-`
 const TopLeftWrap=styled.div`
 padding-top: 10rem;
   width:48%;
@@ -369,14 +300,17 @@ const Caption=styled.h1`
    color:${(props) => props.theme.btnColor} ;
 `
 const Heading=styled.h1`
-   font-family: 'Oswald';
-   font-size:3.5rem;
-   font-weight: 400;
+   font-family: 'Poppins';
+   font-size: 4rem;
+   font-weight: 300;
    font-style: bold;
    height: max-content;
    width: max-content;
    letter-spacing: 0.5rem;
    color:${(props) => props.theme.btnColor} ;
+   justify-content: center;
+   align-items: center;
+   text-transform: uppercase;
 `
 const Paragraph=styled.p`
    margin:0;

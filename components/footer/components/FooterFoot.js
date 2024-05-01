@@ -7,11 +7,8 @@ import styled from 'styled-components'
         <SubHeader>
         <Div>
           <Text>
-            @2024 MediLedger All Rights Reserved
+          National Institute of Technology Patna-800005, Bihar, INDIA ©2024 NIT Patna
           </Text>
-        </Div>
-        <Div>
-           <Head>Privacy Policy : Terms And Conditions applied</Head>
         </Div>
         </SubHeader>
     </Header>
@@ -19,39 +16,29 @@ import styled from 'styled-components'
 }
 
 const Header=styled.section`
-height: 20vh;
+height: 5vh;
 width: 100%;
-padding-top: 1.5vh;
 display: flex;
 flex-direction: row;
 justify-content: center;
-background-color: ${(props) => props.theme.bgDiv};
+text-aligned: center;
+// background-color: ${(props) => props.theme.bgDiv};
 `
 const SubHeader=styled.section`
 width: 60%;
 display: flex;
 `
 const Div=styled.div`
-     width: 50%;
+     width: 100%;
      display: flex;
      flex-direction: column;
      justify-content: center;
-     align-items: left;
+     align-items: center;
      
 `
 
 const Text=styled.div`
 color: ${(props)=>props.theme.colorDiv};
     font-family: 'Poppins';
-`
-
-const Head=styled.div`
-   color: ${(props)=>props.theme.colorDiv};
-   font-style: bold;
-   font-family: 'Comfortaa';
-   font-weight: 20rem;
-   font-size: small;
-   text-transform: uppercase;
-   
 `
 export default FooterFoot

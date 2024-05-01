@@ -40,39 +40,49 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 }
 
 const Submit=styled.button`
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 3px;
   text-align: center;
   width: max-content;
   background-color: ${(props) => props.theme.btnColor};
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
-  font-family: 'Roboto';
+  font-family: 'Poppins';
   text-transform: uppercase;
   &:hover{
     background-color: ${(props) => props.theme.colorSec} ;
-    color:${(props) => props.theme.color} ;
+    color:${(props) => props.theme.Color} ;
     transform: translateY(-2px);
     transition: transform 0.5s;
   }
   font-size: 14px;
   font-weight: bold;
 `
+
 const SubMain=styled.section`
     width: 60%;
     display: flex;
     justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
 
 `
 const Main=styled.div`
     background-color: ${(props)=>props.theme.bgDiv};
-    width:100%;
-    height:20vh;
+    width:150%;
+    height:50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 6rem;
+    padding-bottom: 5rem;
     border-bottom: 0.1rem solid ${(props)=>props.theme.colorDiv};
 `
 const Division=styled.div`
-    width: 20%;
+    width: 120%;
+    padding-left: 80px;
+    padding-right: 80px;
 `
 const Icon=styled.div`
    color: ${(props)=>props.theme.colorDiv};
@@ -84,10 +94,12 @@ const Head=styled.div`
    color: ${(props)=>props.theme.colorDiv};
    font-style: bold;
    font-weight: 20rem;
-   font-size: small;
+   font-family: 'Poppins';
+   font-size: 95%;
    text-transform: uppercase;
    padding-bottom: 0.5rem;
    padding-top: 3rem;
+   padding-right: 3rem;
    
 `
 const Input=styled.input`

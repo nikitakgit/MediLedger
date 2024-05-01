@@ -17,8 +17,8 @@ import TopRight from './components/TopRight'
 const TopWrap=styled.div`
     display: flex;
     justify-content: center;
-    padding-bottom: 20%;
-    padding-top: 9rem;
+    padding-bottom: 2%;
+    padding-top: 4.5rem;
     
 `
 export default Top

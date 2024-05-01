@@ -1,21 +1,19 @@
 const light = {
     color: 'black',
     colorDiv:'#fff',
-    bgColor: '#e9e9e9',
-    //bgImage: 'linear-gradient(180deg, #efe7fd 0%, #bdccf7 60%)',
-    bgDiv: '#3700B3',
-    bgSubDiv: '#efe7fd',
-    btnColor:"#3700B3",
-    colorSec:'#C3B1E1',
-    detail:'#C3B1E1',
-    btnDetail:'#3700B3'
+    bgColor: '#fffff',
+    
+    bgSubDiv: '#91C8E4',
+    btnColor:"#4682A9",
+    colorSec:'#91C8E4',
+    detail:'#91C8E4',
+    btnDetail:'#749BC2'
 }
 
 const dark = {
     color: '#e9e9e9',
     colorDiv:'black',
     bgColor: '#121212',
-    //bgImage: 'linear-gradient(180deg, #2f0f3d 5%, #000000 90%)',
     bgDiv: '#E0B0FF',
     bgSubDiv: '#454545',
     btnColor:'#E0B0FF',

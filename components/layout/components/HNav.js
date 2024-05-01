@@ -43,12 +43,12 @@ const HNavLinks=styled.div`
     color: 'black';    
     text-decoration: none;
     &:hover{
-    background-color: ${(props) => props.theme.colorSec} ;
-    color:${(props) => props.theme.color} ;
-    transform: translateY(-2px);
+    background-color: ${(props) => props.theme.ColorSec} ;
+    color:${(props) => props.theme.btnColor} ;
+    transform: translateY(-7px);
     transition: transform 0.5s;
   }
-    height: 90%;
+    height: 100%;
     width: max-content;
     font-family: 'Comfortaa';
     margin:7px;
@@ -58,8 +58,6 @@ const HNavLinks=styled.div`
     text-transform: uppercase;
      font-weight: bold ;
      font-size: medium;
-    
-
 `
 
 

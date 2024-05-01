@@ -51,18 +51,30 @@ const AccountDetails=()=>{
   )
 }
 const ConnectAccWrap=styled.div`
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding:5px 9px;
-   height: 50%;
-   /* color:${(props)=>props.theme.color}; */
-   border-radius: 10px;
-   margin-right: 15px;
-   font-family: 'Comfortaa';
-   text-transform: uppercase;
-   font-weight: bold;
-   font-size: x-small;
+.link{
+  color:'black';
+}
+display: flex;
+align-items: center;
+justify-content: space-between;
+color: 'black';    
+text-decoration: none;
+&:hover{
+background-color: ${(props) => props.theme.colorSec} ;
+color:${(props) => props.theme.btnColor} ;
+transform: translateY(-8px);
+transition: transform 0.5s;
+}
+height: 60%;
+width: max-content;
+font-family: 'Comfortaa';
+margin:4px;
+border-radius: 6px;
+padding: 2px 5px 5px;
+cursor: pointer;
+text-transform: uppercase;
+ font-weight: bold ;
+ font-size: small;
 `
 const AccAddress=styled.h2`
    height: 30%;

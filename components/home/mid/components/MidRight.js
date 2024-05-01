@@ -7,7 +7,7 @@ import Image from 'next/image'
 const MidRight = () => {
   return (
     <MidHomeRightWrap>
-       <Image src="https://img.freepik.com/free-vector/data-network-businessman_24908-57820.jpg?t=st=1681563600~exp=1681564200~hmac=900b39a4706b5ecfdc18de491b2280dd389c8c827435a568a51b138448021e54" width="400" height="400"/>
+       <Image src="https://img.freepik.com/free-vector/online-doctor-concept_23-2148508373.jpg?size=626&ext=jpg&ga=GA1.1.1726448641.1714521732&semt=sph" width="640" height="700"/>
     
 
     </MidHomeRightWrap>

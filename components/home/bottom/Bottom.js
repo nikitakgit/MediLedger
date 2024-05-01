@@ -16,8 +16,7 @@ const Bottom = () => {
 const BottomHomeWrap=styled.section`
 display: flex;
 justify-content: center;
-padding-bottom: 20%;
-
+padding-bottom: 4%;
 `
 
 export default Bottom

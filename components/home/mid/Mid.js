@@ -15,7 +15,7 @@ const Mid = () => {
 const MidHomeWrap=styled.section`
     display: flex;
     justify-content: center;
-    padding-bottom: 20%;
+    padding-bottom: 2%;
     
 `
 

@@ -163,7 +163,11 @@ const FormLeft = () => {
 }
 
 const FormLeftWrap = styled.div`
-  width:47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 25px 50px 75px 100px;
 `
 
 const FormInput = styled.div`

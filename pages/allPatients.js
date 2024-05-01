@@ -43,7 +43,7 @@ import {useRouter} from 'next/router';
               return(
                  <Card >
                   <CardData>
-                    <Image src="https://img.freepik.com/free-vector/data-network-businessman_24908-57817.jpg?t=st=1681567642~exp=1681568242~hmac=ab836baab71c248c8f6155ecc4c999d9de72dc688e3a1baddc432643c5793ccf" width="280" height="225" />
+                    <Image src="https://img.freepik.com/free-vector/group-doctors-standing-hospital-building-team-practitioners-ambulance-car_74855-14034.jpg?w=1380&t=st=1714527120~exp=1714527720~hmac=ef1e6d8c3ebbdea2c3f661e56622707db1b9cb33f072ca5ee9f906fe9b565b3" width="280" height="225" />
                   </CardData>
                   <CardData>
                     <Text>Patient Name : {e.name}</Text> 
@@ -266,14 +266,17 @@ const Caption=styled.h1`
    padding-bottom: 2rem;
 `
 const Heading=styled.h1`
-   font-family: 'Oswald';
-   font-size:3.5rem;
-   font-weight: 400;
+   font-family: 'Poppins';
+   font-size: 4rem;
+   font-weight: 300;
    font-style: bold;
    height: max-content;
    width: max-content;
    letter-spacing: 0.5rem;
    color:${(props) => props.theme.btnColor} ;
+   justify-content: center;
+   align-items: center;
+   text-transform: uppercase;
 `
 const Paragraph=styled.p`
    margin:0;

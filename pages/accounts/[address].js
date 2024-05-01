@@ -281,13 +281,7 @@ const RightContainer = styled.div`
   width: 50%;
   padding-top: 5rem;
 `;
-const DonateSection = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content:space-between;
-  align-items: center;
-  margin-top: 10px;
-`;
+
 
 const TNavLinks=styled.div`
     display: flex;
@@ -313,10 +307,6 @@ const TNavLinks=styled.div`
      font-size: medium;
     
 
-`
-
-const Text=styled.p`
-  margin-top: 0;
 `
 const TopLeftWrap=styled.div`
 padding-top: 10rem;
@@ -372,14 +362,17 @@ const Caption=styled.h1`
    color:${(props) => props.theme.btnColor} ;
 `
 const Heading=styled.h1`
-   font-family: 'Oswald';
-   font-size:3.5rem;
-   font-weight: 400;
+   font-family: 'Poppins';
+   font-size: 4rem;
+   font-weight: 300;
    font-style: bold;
    height: max-content;
    width: max-content;
    letter-spacing: 0.5rem;
    color:${(props) => props.theme.btnColor} ;
+   justify-content: center;
+   align-items: center;
+   text-transform: uppercase;
 `
 const Paragraph=styled.p`
    margin:0;

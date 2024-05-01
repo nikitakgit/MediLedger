@@ -19,7 +19,7 @@ import { TailSpin } from 'react-loader-spinner'
         <Caption>
             YOUR UPDATES JUST A CLICK AWAY
           </Caption>
-        <Text><Paragraph>Scroll down  to see  more ...</Paragraph></Text>
+        <Paragraph>Scroll down  to see  more ...</Paragraph>
        
         
     </TopLeftWrap> 
@@ -293,14 +293,17 @@ const Caption=styled.h1`
    color:${(props) => props.theme.btnColor} ;
 `
 const Heading=styled.h1`
-   font-family: 'Oswald';
-   font-size:3.5rem;
-   font-weight: 400;
+   font-family: 'Poppins';
+   font-size: 4rem;
+   font-weight: 300;
    font-style: bold;
    height: max-content;
    width: max-content;
    letter-spacing: 0.5rem;
    color:${(props) => props.theme.btnColor} ;
+   justify-content: center;
+   align-items: center;
+   text-transform: uppercase;
 `
 const Paragraph=styled.p`
    margin:0;
@@ -351,45 +354,3 @@ const FundTextTitle = styled.p`
   font-size: normal;
   color:${(props) => props.theme.colorDiv} ;
 `;
-
-const FormInput = styled.div`
-  display:flex ;
-  flex-direction:column;
-  font-family:'poppins';
-  margin-top:10px ;
-`
-const Input = styled.input`
-  padding:15px;
-  color:${(props) => props.theme.color} ;
-  margin-top:4px;
-  ::placeholder{
-    font-size: smaller;
-    color: lightslategrey;
-  }
-  border:1px solid ${(props) => props.theme.bgDiv};
-  outline:none;
-  font-size:large;
-  width:100% ;
-`
-
-const Button = styled.button`
-    
-    text-align: center;
-    width: 100%;
-    background-color: ${(props) => props.theme.btnColor};
-    border: none;
-    cursor: pointer;
-    font-family: 'Comfortaa';
-    text-transform: uppercase;
-    border-radius: 5px;
-    height: 3.5rem;
-    &:hover{
-      background-color: ${(props) => props.theme.colorSec} ;
-      color:${(props) => props.theme.color} ;
-      transform: translateY(-2px);
-      transition: transform 0.5s;
-    }
-    color:${(props) => props.theme.colorDiv} ;
-    font-size: 14px;
-    font-weight: bold;
-  `

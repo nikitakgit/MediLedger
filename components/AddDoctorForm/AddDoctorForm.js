@@ -109,14 +109,14 @@ const AddDoctorForm = () => {
 }
 
 const FormWrap=styled.div`
-  padding-top:rem;
-   width: 100%;
-   display: flex;
-   justify-content: center;
+  padding-left: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `
 const Main=styled.div`
-   width:60%;
-
+  width: 100%;
+  padding: 0px 10px 25px 150px;
 `
 
 const FormInputsWrap = styled.div`
@@ -231,7 +231,7 @@ const Paragraph=styled.p`
    font-style: bold;
 `
 const ButtonWrap = styled.button`
-margin-bottom: 10px;
+  margin-bottom: 10px;
   padding: 8px;
   text-align: center;
   width: max-content;

@@ -5,14 +5,12 @@ const addPatient = () => {
   return (
      <FormWrapper>
       <FormTopWrap>
-        <Paragraph> Presenting our</Paragraph>
+        {/* <Paragraph> Presenting our</Paragraph> */}
         <Heading>Patient Registration Form</Heading>
         <Caption>
             THE RIGHT TECHNOLOGY CAN MAKE A DIFFERENCE   
         </Caption>
-        <Paragraph>Please fill up the details very carefully.Every field is mandatory. </Paragraph>
-       
-        
+        <Paragraph>Please fill up the details very carefully. Every field is mandatory. </Paragraph>
     </FormTopWrap>  
       <AddPatientForm />
     </FormWrapper>
@@ -30,8 +28,8 @@ const TopLeftWrap=styled.div`
   justify-content: center;
 `
 const Caption=styled.h1`
-   font-family: 'Oswald';
-   font-size:1rem;
+   font-family: 'Poppins';
+   font-size:2rem;
    font-weight: 300;
    font-style: bold;
    height: max-content;
@@ -40,8 +38,8 @@ const Caption=styled.h1`
    color:${(props) => props.theme.btnColor} ;
 `
 const Heading=styled.h1`
-   font-family: 'Oswald';
-   font-size:3.5rem;
+   font-family: 'Poppins';
+   font-size: 5rem;
    font-weight: 400;
    font-style: bold;
    height: max-content;
@@ -50,10 +48,11 @@ const Heading=styled.h1`
    color:${(props) => props.theme.btnColor} ;
    justify-content: center;
    align-items: center;
+   text-transform: uppercase;
 `
 const Paragraph=styled.p`
    margin:0;
-   font-size: 1rem;
+   font-size: 20px;
    padding: 0;
    font-weight: 500;
    text-align: center;
@@ -61,9 +60,8 @@ const Paragraph=styled.p`
    font-style: bold;
 `
 const FormWrapper=styled.div`
-
-    padding-top: 9rem;
-    
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 `
 const FormTopWrap=styled.div`
     display: flex;

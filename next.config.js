@@ -6,7 +6,8 @@ const nextConfig = {
       "images.businessnewsdaily.com",
       "img.freepik.com",
     "previews.123rf.com",
-  "cdn.vectorstock.com"],
+  "cdn.vectorstock.com",
+  "www.freepik.com"],
   },
 }
 

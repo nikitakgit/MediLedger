@@ -90,33 +90,28 @@ const FormRight = () => {
             <Input onChange={Handler.FormHandler} value={Handler.form.allergies} name="allergies" placeholder='Enter allergy information if any'></Input>
           </RowFirst>
           <RowSecond>
-            <label>PATEINT HEIGHT</label>
+            <label>PATIENT HEIGHT (cm)</label>
             <Input onChange={changeHt} value={Handler.form.height} name="height"  ></Input>
             {htError && <div style={{ color: 'red' ,textAlign:'left'}}>{htError}</div>}
           </RowSecond>
           <RowSecond>
-            <label>PATEINT WEIGHT</label>
+            <label>PATIENT WEIGHT (kg)</label>
             <Input onChange={changeWt} value={Handler.form.weight}  name="weight"  ></Input>
             {wtError && <div style={{ color: 'red' ,textAlign:'left'}}>{wtError}</div>}
           </RowSecond>
           <RowSecond>
-            <label>PATEINT BLOOD GROUP</label>
+            <label>PATIENT BLOOD GROUP</label>
             <Input onChange={changeBg} value={Handler.form.bloodgrp} name="bloodgrp"></Input>
             {bgError && <div style={{ color: 'red' ,textAlign:'left'}}>{bgError}</div>}
           </RowSecond>
-        </FormRow>
-      </FormInput>
 
-
-      <FormInput>
-        <FormRow>
           <RowFirst>
             <label>EMERGENCY CONTACT INFORMATION</label>
             <Input onChange={handleContactChange}  name="emergencyContact" ></Input>
             {contactError && <div style={{ color: 'red' ,textAlign:'left'}}>{contactError}</div>}
           </RowFirst>
           <RowSecond>
-            <label>PATEINT MARITAL STATUS</label>
+            <label>PATIENT MARITAL STATUS</label>
             <Select name="maritalStatus">
               <option>Married</option>
               <option>Unmarried</option>
@@ -128,7 +123,7 @@ const FormRight = () => {
       
       
       <Button onClick={ Handler.registerPatient}>
-        Register Pateint
+        Register Patient
       </Button>
     </FormRightWrap>
   )
@@ -138,14 +133,14 @@ const FormRightWrap = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-  width:47%;
+  width: 100%;
+  margin: 29px 100px 75px 100px;
 `
 
 const FormInput = styled.div`
   display:flex ;
   flex-direction:column;
   font-family:'poppins';
-  margin-top:10px ;
 `
 
 const FormRow = styled.div`
@@ -172,12 +167,14 @@ const RowFirst = styled.div`
   display:flex ;
   flex-direction:column ;
   width:100% ;
+  padding-top: 9px;
 `
 
 const RowSecond= styled.div`
   display:flex ;
   flex-direction:column ;
   width:100% ;
+  padding-top: 9px;
 `
 
 const Select = styled.select`
@@ -191,21 +188,20 @@ const Select = styled.select`
   border:1px solid ${(props) => props.theme.bgDiv};
   outline:none;
   font-size:large;
-  width:100% ;
+  width:107% ;
 `
 
 
 const Button = styled.button`
-    
     text-align: center;
-    width: 100%;
+    width: 108%;
     background-color: ${(props) => props.theme.btnColor};
     border: none;
     cursor: pointer;
     font-family: 'Comfortaa';
     text-transform: uppercase;
     border-radius: 5px;
-    height: 3.5rem;
+    height: 4rem;
     &:hover{
       background-color: ${(props) => props.theme.colorSec} ;
       color:${(props) => props.theme.color} ;
@@ -215,6 +211,8 @@ const Button = styled.button`
     color:${(props) => props.theme.colorDiv} ;
     font-size: 14px;
     font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: -5px;
   `
 
 export default FormRight

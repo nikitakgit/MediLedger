@@ -7,6 +7,7 @@ import FooterMain from "./components/FooterMain";
 const Footer = () => {
   return (
     <Wrapper>
+      {/* <FooterHeader /> */}
       <FooterMain />
       <FooterFoot />
       </Wrapper>
@@ -14,11 +15,12 @@ const Footer = () => {
     }
 
 const Wrapper = styled.section`
-  padding-top: 10%;
+  padding-top: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: ${(props)=>props.theme.btnColor};
   ;
  `
 

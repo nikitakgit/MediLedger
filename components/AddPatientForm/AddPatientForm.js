@@ -135,14 +135,14 @@ const AddPatientForm = () => {
 }
 
 const FormWrap=styled.div`
-  padding-top:rem;
+  padding-left: 5rem;
    width: 100%;
    display: flex;
    justify-content: center;
 `
 const Main=styled.div`
-   width:60%;
-
+   width: 100%;
+   padding: 0px 10px 25px 150px;
 `
 
 const FormInputsWrap = styled.div`
