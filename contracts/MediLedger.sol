@@ -26,7 +26,7 @@ contract MediLedger {
 
     constructor() {
         admin = msg.sender;
-        accounts = 0x7814c6fd323a2EB88D257289682E3c2c8E945C82;
+        accounts = 0x38b0f020C49Bd0F5f9d902FCfbff6c9e7a0b1086;
     }
 
     function addPatient(
@@ -119,9 +119,10 @@ contract Patient {
         accounts = _accounts;
         admin = _admin;
         walletid = _walletid;
-        allDoctorsWallets.push(0x0afD378421B04eb9dbF6DBD5Ac59f48CF43c3912);
-        allDoctorsWallets.push(0xc1497A7f53AaAB192D5ff344887749CF9dcE143c);
-        allDoctorsWallets.push(0x10237067D9a21Ddb0381bF2F0BDEefAb3020b29b);
+        
+        allDoctorsWallets.push(0x3898D35b2cE5CCF6Fca9845A04f079ad57898cd7);
+        allDoctorsWallets.push(0xB20dbb98e3Dd90b7B3376B09497DC605a6D13c43);
+        allDoctorsWallets.push(0x0e6Dc817c720323AB988f8BB6AF0888865b50356);
     }
 
     function passBill() public payable {

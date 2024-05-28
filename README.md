@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MediLedger : Blockchain-Based Secure Storage and Billing Management Application of Electronic Health Record
 
 
@@ -71,3 +72,7 @@ You can start editing the page by modifying pages/index.js. The page auto-update
 
 Note: Be careful with the constraints put. For more information, read MediLedger.sol program.
 Update <your_rpc_url> and <your_metamask_private_key> with your actual RPC URL and Metamask private key respectively.
+=======
+# MediLedger
+MediLedger is a blockchain-based hospital and bill management system that securely handles patient records, doctor prescriptions, and financial transactions with transparency and efficiency.
+>>>>>>> 94ca27fe908ba64d617468f4667bff07197e0025
